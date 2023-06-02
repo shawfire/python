@@ -18,8 +18,40 @@
 - [pytest-cov’s documentation](https://pytest-cov.readthedocs.io/en/latest/)
 - [pytest-cov pip documentation](https://pypi.org/project/pytest-cov/)
 - [How to generate a documentation for Python project using pdoc](https://lucacorbucci.medium.com/how-to-generate-a-documentation-for-python-code-using-pdoc-60f681d14d6e)
+- [pylint: Ignore line-too-long for long URLs](https://github.com/pylint-dev/pylint/issues/2178)
 
 </details>
+
+<details><summary>python commands summary</summary>
+
+```bash
+python --version
+alias
+alias python=`which python3`
+pip --version
+# pip install -U pytest
+pytest -vv
+# pip install pytest-cov 
+pytest --cov -v
+# pip install pylint
+pylint */*.py *.py --recursive y
+# pip install --upgrade autopep8
+# autopep8 --version
+# autopep8 * -r -a -v --experimental -d
+autopep8 *.py **/*.py --recursive --aggressive --verbose --experimental --diff
+# autopep8 * -r -a -v --experimental -i
+autopep8 *.py **/*.py --recursive --aggressive --verbose --experimental --in-place
+# python -m pydoc utils.cards
+# python -m pydoc -k http
+python -m pydoc math.pow
+# pip install pdoc3
+# pdoc --html . --html-dir docs
+open docs/python/index.html 
+python -m doctest -v *.py **/*.py
+```
+
+</details>
+
 
 <details><summary>Making python3 and pip3 the default on mac</summary>
 
@@ -235,6 +267,17 @@ python --version
 pip install pdoc3
 pdoc --html . --html-dir docs
 open docs/python/index.html 
+```
+
+</details>
+
+<details><summary>doctest</summary>
+
+- [doctest — Test interactive Python examples](https://docs.python.org/3/library/doctest.html)
+- [pylint: Ignore line-too-long for long URLs](https://github.com/pylint-dev/pylint/issues/2178)
+
+```bash
+python -m doctest -v *.py **/*.py
 ```
 
 </details>
