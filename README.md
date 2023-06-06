@@ -19,6 +19,7 @@
 - [pytest-cov pip documentation](https://pypi.org/project/pytest-cov/)
 - [How to generate a documentation for Python project using pdoc](https://lucacorbucci.medium.com/how-to-generate-a-documentation-for-python-code-using-pdoc-60f681d14d6e)
 - [pylint: Ignore line-too-long for long URLs](https://github.com/pylint-dev/pylint/issues/2178)
+- [python modules](https://docs.python.org/3/tutorial/modules.html)
 
 </details>
 
@@ -45,7 +46,7 @@ autopep8 *.py **/*.py --recursive --aggressive --verbose --experimental --in-pla
 # python -m pydoc -k http
 python -m pydoc math.pow
 # pip install pdoc3
-# pdoc --html . --html-dir docs
+# pdoc --html . --html-dir docs --force
 open docs/python/index.html 
 python -m doctest -v *.py **/*.py
 ```
