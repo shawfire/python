@@ -6,8 +6,6 @@
 """
 # pylint: enable=line-too-long
 
-
-
 def new_deck() -> list[str]:
     """Return a new deck of cards
 

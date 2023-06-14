@@ -1,6 +1,6 @@
 """cards_test package
 
-To invoke pytest with double verbose flag to ensure that the expected value 
+To invoke pytest with double verbose flag to ensure that the expected value
 is printed in full when there is an error:
 pytest -vv
 """

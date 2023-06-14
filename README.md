@@ -35,18 +35,23 @@ pytest -vv
 # pip install pytest-cov 
 pytest --cov -v
 # pip install pylint
+# pylint directives to ignore intentional linting deviations
+# pylint: disable=line-too-long
 pylint */*.py *.py --recursive y
+# Fix linting errors:
 # pip install --upgrade autopep8
 # autopep8 --version
 # autopep8 * -r -a -v --experimental -d
 autopep8 *.py **/*.py --recursive --aggressive --verbose --experimental --diff
+# reformat lines that are too long
 # autopep8 * -r -a -v --experimental -i
 autopep8 *.py **/*.py --recursive --aggressive --verbose --experimental --in-place
 # python -m pydoc utils.cards
 # python -m pydoc -k http
 python -m pydoc math.pow
+# pdoc provides better formated html project documentation from pydoc comments
 # pip install pdoc3
-# pdoc --html . --html-dir docs --force
+pdoc --html . --html-dir docs --force
 open docs/python/index.html 
 python -m doctest -v *.py **/*.py
 ```
